@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'portfolio',
+    'MyAllshop',
 ]
 
 MIDDLEWARE = [
@@ -76,8 +77,14 @@ WSGI_APPLICATION = 'myportfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'db_coba',
+        'USER': 'root',
+        'PASSWORD': 'Yanti67',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 

@@ -15,5 +15,15 @@ class Contact(models.Model):
 
       def __str__(self):
             return f"{self.name}{self.email}"
+      
+class Member(models.Model):
+      name = models.CharField(max_length=255)
+      phone = models.IntegerField(null=True)
+      
+      def __str__(self):
+        return f"{self.name}{self.phone}"
+  
+
+          
           
      
